@@ -348,6 +348,12 @@ def show_headnode(headnode):
     do_get(url)
 
 @cmd
+def show_project_headnode(project):
+    """Display information about a headnode of the <project>"""
+    url = object_url('project', project, 'headnode')
+    do_get(url)
+	
+@cmd
 def list_headnode_images():
     """Display registered headnode images"""
     url = object_url('headnode_images')
